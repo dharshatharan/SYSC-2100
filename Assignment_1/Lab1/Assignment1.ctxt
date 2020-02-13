@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Assignment1
+comment0.text=\n\ Class\ that\ contains\ the\ methods\ required\ to\ be\ written\ for\ Assignment\ 1\ in\ SYSC\ 2100\n\ @author\ Dharshatharan\ J.\ A.\n\ @version\ 1.0\n
+comment1.params=n\ k
+comment1.target=int\ c(int,\ int)
+comment1.text=\n\ Recursive\ method\ that\ solves\ the\ Spock\ problem\ to\ check\ how\ many\ ways\ k\ planets\ can\ be\ visited\ from\ n\ planets\n\ @param\ n\ Total\ number\ of\ planets\ that\ can\ be\ visited\n\ @param\ k\ Number\ of\ planets\ Spock\ wats\ to\ visit\n\ @return\ The\ number\ of\ ways\ k\ planets\ can\ be\ visited\ from\ n\ planets\n
+comment2.params=n
+comment2.target=int\ p(int)
+comment2.text=\n\ Recursive\ method\ that\ Organises\ a\ Parade\ with\ no\ two\ bands\ playing\ back\ to\ back\n\ @param\ n\ number\ of\ bands\ and\ floats\n\ @return\ Number\ of\ ways\ to\ organise\ a\ parade\n
+comment3.params=ch\ n
+comment3.target=void\ writeLine(char,\ int)
+comment3.text=\n\ Method\ that\ prints\ the\ character\ ch\ n\ number\ of\ time\ in\ a\ line\n\ @param\ ch\ character\ to\ be\ printed\n\ @param\ n\ Number\ of\ times\ ch\ needs\ to\ be\ printed\n
+comment4.params=ch\ n\ m
+comment4.target=void\ writeBlock(char,\ int,\ int)
+comment4.text=\n\ Method\ that\ printes\ a\ block\ of\ characters\n\ @param\ ch\ Character\ to\ be\ printed\n\ @param\ n\ Number\ of\ characters\ in\ a\ line\n\ @param\ m\ Number\ or\ rows\n
+comment5.params=number
+comment5.target=void\ reverseDigits(int)
+comment5.text=\n\ Reverses\ a\ decimal\ integer\n\ @param\ number\ The\ number\ to\ be\ reversed\ \n
+comment6.params=anArray\ first\ last\ value
+comment6.target=int\ myBinarySearch(java.lang.String[],\ int,\ int,\ java.lang.String)
+comment6.text=\n\ Recursive\ method\ that\ performs\ binary\ search\ on\ an\ array\ of\ strings\n
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=\n\ Main\ Method\ that\ displays\ the\ working\ of\ other\ methods\ \n\ @param\ args\n
+numComments=8
