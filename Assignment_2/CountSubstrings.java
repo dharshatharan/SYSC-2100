@@ -1,8 +1,20 @@
 import java.util.*;
 import java.io.*; 
 
+/**
+ * Class to count the number of times a string appears in a text file
+ * @author Dharshatharan J. A.
+ * @version 1.0
+ */
 public class CountSubstrings {
 
+  /**
+   * Counts the number of times a string appears in a text file
+   * @param fileName file name of the text file
+   * @param listType Type of list to be created - ArrayList or LinkedList
+   * @param pattern The string to be searched for
+   * @return
+   */
   private static int CountSubString(String fileName, String listType, String pattern) {
     int count = 0;
     try {
@@ -19,6 +31,8 @@ public class CountSubstrings {
           count++;
           index = findBrute(list, patternList);
         }
+        
+        list.clear();
       } 
       myReader.close();
     } catch (FileNotFoundException e) {
@@ -29,6 +43,12 @@ public class CountSubstrings {
 
   }
 
+  /**
+   * Creates an ArrayList or LinkedList using the data based on listType
+   * @param data Data to be made into a list
+   * @param listType type of list to be created 
+   * @return
+   */
   private static List<Character> CreateList(String data, String listType) {
     int n = data.length();
 
@@ -67,6 +87,10 @@ public class CountSubstrings {
     return -1; // search failed
   } 
 
+  /**
+   * Main fuction of the program that prompts the user to enter file to search and the word to search for
+   * @param args
+   */
   public static void main(String[] args){
     Scanner myObj = new Scanner(System.in);
     System.out.print("Please enter the path of the input file: ");
