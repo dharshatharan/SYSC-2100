@@ -1,4 +1,3 @@
-package assignment3;
 import java.io.*;
 public class Assignment3 {
   public static void main (String[] args) {
@@ -10,7 +9,7 @@ public class Assignment3 {
           System.out.print("Enter the G-language word to check: ");
           input = keyboardReader.readLine();
           break;
-        }
+        } 
       } catch (IOException e) {
         System.out.println(e);
       }

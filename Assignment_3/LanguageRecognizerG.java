@@ -1,13 +1,35 @@
-package assignment3;
 import java.util.*;
 
 public class LanguageRecognizerG{
 
   final char[] E = {'&', '#'};
   final char[] V = {'W', 'A'};
+  private LinkedList<Character> data;
+  private String st;
   
+  public LanguageRecognizerG(String data){
+    st = data;
+    this.data = CreateList(data);
+  }
+
   private boolean recursiveRecogG(LinkedList<Character> G){
-    if()
+    char first = G.getFirst();
+    char next;
+    if(G.size() != 1){
+      next = G.get(1);
+    } else {
+      next = '\0';
+    }
+    char last = G.getLast();
+    if((recogE(first)) || (recogV(first) && recogE(next))){
+      return true;
+    } else if((recogE(first)) && (recogV(last))){
+      G.removeFirst();
+      G.removeLast();
+      return recursiveRecogG(G);
+    } else {
+      return false;
+    }
   }
 
   private boolean recogE(char e){
@@ -34,6 +56,12 @@ public class LanguageRecognizerG{
   }
 
   public void recursivePrintG(){
-
+    if(recursiveRecogG(this.data)){
+      System.out.println("Recursion: Word \"" + st + "\" IS a word of the G language");
+    } else if(st.equals("")){
+      System.out.println("Recursion: Word \"\" IS a word of the G language");
+    } else {
+      System.out.println("Recursion: Word " + st + "is NOT a word of the G language");
+    }
   }
 }
